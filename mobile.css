@@ -3,13 +3,30 @@
   body {
     padding: 0;
     margin: 0;
-    background-color: red;
+    /* background-color: red; */
+  }
+
+  :root {
+    /* Primary colors */
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+    /* Neutral colors */
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
   }
 
   #main {
     width: 100%;
     min-height: 100vh;
   }
+
   nav {
     position: absolute;
     top: 0;
@@ -25,7 +42,6 @@
   }
 
   .left-nav {
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     width: auto;
@@ -36,6 +52,7 @@
     overflow: hidden;
     cursor: pointer;
   }
+
   .left-nav img {
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
   }
@@ -49,51 +66,265 @@
     flex-direction: column;
   }
 
-
-  /* rigth nav krycha aahe te ntr krycha  ................. */
-
-
-
-
-
   .part-1 {
     width: 100%;
     min-height: 100vh;
     background-image: url("/images/mobile/image-header.jpg");
     background-position: center center;
     background-size: cover;
-    /* overflow: hidden; */
   }
-
 
   .part-1 .text {
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    
     flex-direction: column;
-    
   }
-  
+
   .text h1 {
     margin-top: 170px;
     font-size: 10vw;
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
-    /* margin-left: 10px; */
     color: white;
     font-weight: 900;
     font-family: "Fraunces", sans-serif;
   }
-  
+
   .text img {
     margin-top: 75px;
   }
 
+  /* part 2 start here */
+  .part-2 {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .container-1 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-1 .left-side {
+    width: 100%;
+    height: 50vh;
+    order: 2; /* Move this div below the right-side div */
+  }
+
+  .container-1 .right-side {
+    width: 100%;
+    height: 50vh;
+    background-image: url("/images/mobile/image-transform.jpg");
+    background-position: center center;
+    background-size: cover;
+    order: 1; /* Move this div above the left-side div */
+  }
+
+  .text-part-1 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-part-1 h1 {
+    font-size: 8vw;
+    padding: 0 10vw;
+    padding-bottom: 30px;
+    font-weight: 900;
+    margin-top: 10%;
+    color: var(--very-dark-desaturated-blue);
+    font-family: "Fraunces", sans-serif;
+  }
+
+  .text-part-1 p {
+    margin: 0;
+    font-size: 4vw;
+    padding: 0 8.6vw;
+    font-weight: 500;
+    padding-bottom: 30px;
+    font-family: "Barlow", sans-serif;
+  }
+
+  .text-part-1 h5 {
+    margin-top: 0;
+    font-size: 4vw;
+    color: var(--very-dark-desaturated-blue);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    padding-left: 5px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .text-part-1 h5::after {
+    content: "";
+    position: absolute;
+    left: 35vw;
+    bottom: 1.5px;
+    z-index: -1;
+    width: 32%;
+    height: 5px;
+    opacity: 0.5;
+    border-radius: 20px;
+    background-color: var(--yellow);
+  }
+
+  .text-part-1 h5:hover::after {
+    opacity: 1;
+    background-color: var(--yellow);
+    cursor: pointer;
+    height: 8px;
+  }
+
+  /* part 3 start here */
+  .part-3 {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .container-2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-2 .left-side-2 {
+    background-image: url("/images/desktop/image-stand-out.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 1;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .container-2 .right-side-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 2;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .text-part-2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .text-part-2 h1 {
+    font-size: 8vw;
+    padding: 0 10vw;
+    padding-bottom: 30px;
+    font-weight: 900;
+    margin-top: 10%;
+    color: var(--very-dark-desaturated-blue);
+    font-family: "Fraunces", sans-serif;
+  }
+
+  .text-part-2 p {
+    margin: 0;
+    font-size: 4vw;
+    padding: 0 8.6vw;
+    font-weight: 500;
+    padding-bottom: 30px;
+    font-family: "Barlow", sans-serif;
+  }
+
+  .text-part-2 h5 {
+    margin-top: 0;
+    font-size: 4vw;
+    color: var(--very-dark-desaturated-blue);
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    padding-left: 5px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5vw;
+  }
+
+  .text-part-2 h5::after {
+    content: "";
+    position: absolute;
+    left: 35vw;
+    bottom: 1.5px;
+    z-index: -1;
+    width: 32%;
+    height: 5px;
+    opacity: 0.5;
+    border-radius: 20px;
+    background-color: var(--soft-red);
+  }
+
+  .text-part-2 h5:hover::after {
+    opacity: 1;
+    background-color: var(--soft-red);
+    cursor: pointer;
+    height: 8px;
+  }
+
+  /* part 4 start here */
+  .part-4 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: yellowgreen;
+  }
+  
+  .container-3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 
 
-
-
-}
+  }
+  
+  .left-img {
+    background-image: url("/images/mobile/image-graphic-design.jpg");
+    background-position: center;
+    background-size: contain;
+    height: 300px; 
+    /* Ensure the image covers the full viewport height */
+    width: 100%; /* Ensure the image covers the full width of the container */
+  }
+  
+  .left-img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 30vh;
+  }
+  
+  .right-img-text {
+    display: none;
+  }
+  
+  .left-img-text h1 {
+    font-family: "Fraunces", sans-serif;
+    font-size: 5vw;
+    font-weight: 900;
+    color: var(--dark-desaturated-cyan);
+  }
+  
+  .left-img-text p {
+    padding: 0 25%;
+    letter-spacing: 0.4px;
+    color: var(--dark-desaturated-cyan);
+    text-align: center;
+    line-height: 27px;
+    font-size: 1.1vw;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: "Barlow", sans-serif;
+  }
+}  
