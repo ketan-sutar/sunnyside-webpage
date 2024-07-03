@@ -92,6 +92,12 @@ nav {
   color: black;
   font-family: "Fraunces", serif;
 }
+
+.right-nav ul li #last:hover{
+  background-color: rgba(255, 255, 255, 0.19);
+  color: white;
+}
+
 .part-1 {
   width: 100%;
   min-height: 110vh;
@@ -106,9 +112,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 10px 15px; */
-  /* background-color: red; */
+  
   flex-direction: column;
+  
 }
 
 .text h1 {
@@ -159,6 +165,7 @@ nav {
   margin-right: 1vw;
   font-size: 2.8vw;
   font-weight: 900;
+  color: var(--very-dark-desaturated-blue);
   font-family: "Fraunces", sans-serif;
 }
 
@@ -174,6 +181,7 @@ nav {
 .text-part-1 h5 {
   margin-top: 40px;
   font-size: 1vw;
+  color: var(--very-dark-desaturated-blue);
   font-family: "Fraunces", sans-serif;
   font-weight: 900;
   padding-left: 5px;
@@ -192,6 +200,12 @@ nav {
   opacity: 0.5;
   border-radius: 20px;
   background-color: var(--yellow);
+}
+.text-part-1 h5:hover::after {
+  opacity: 1;
+  background-color: var(--yellow);
+  cursor: pointer;
+  height: 8px;
 }
 .container-1 .right-side {
   background-color: green;
@@ -241,6 +255,7 @@ nav {
   margin-right: 1vw;
   font-size: 2.8vw;
   font-weight: 900;
+  color: var(--very-dark-desaturated-blue);
   font-family: "Fraunces", sans-serif;
 }
 
@@ -258,9 +273,11 @@ nav {
   font-size: 1vw;
   font-family: "Fraunces", sans-serif;
   font-weight: 900;
+  color: var(--very-dark-desaturated-blue);
   padding-left: 5px;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 
 .text-part-2 h5::after {
@@ -274,6 +291,13 @@ nav {
   opacity: 0.5;
   border-radius: 20px;
   background-color: var(--soft-red);
+}
+
+.text-part-2 h5:hover::after {
+  opacity: 1;
+  background-color: var(--soft-red);
+  cursor: pointer;
+  height: 8px;
 }
 
 .part-4 {
@@ -327,11 +351,14 @@ nav {
   font-family: "Fraunces", sans-serif;
   font-size: 2vw;
   font-weight: 900;
+  color: var(--dark-desaturated-cyan);
+
 }
 
 .left-img-text p {
   padding: 0 25%;
   letter-spacing: 0.4px;
+  color: var(--dark-desaturated-cyan);
   text-align: center;
   line-height: 27px;
   font-size: 1.1vw;
@@ -354,6 +381,7 @@ nav {
   font-family: "Fraunces", sans-serif;
   font-size: 2vw;
   font-weight: 900;
+  color: var(--dark-desaturated-cyan);
 }
 
 .right-img-text p {
@@ -362,6 +390,7 @@ nav {
   text-align: center;
   line-height: 27px;
   font-size: 1.1vw;
+  color: var(--dark-desaturated-cyan);
   margin-top: 20px;
   font-weight: 600;
   font-family: "Barlow", sans-serif;
@@ -382,6 +411,11 @@ nav {
 }
 .head {
   margin-top: 8%;
+}
+.head h2{
+  color: var(--grayish-blue);
+  font-family: "Fraunces", sans-serif;
+  letter-spacing: 5px;
 }
 
 .cards-sec {
@@ -426,6 +460,7 @@ nav {
   line-height: 23px;
   font-size: 1vw;
   font-weight: 500;
+  color: var(--very-dark-grayish-blue);
   font-family: "Barlow", sans-serif;
 }
 
@@ -450,6 +485,7 @@ nav {
   font-size: 1vw;
   line-height: 23px;
   font-weight: 500;
+  color: var(--very-dark-grayish-blue);
   font-family: "Barlow", sans-serif;
 }
 
@@ -473,6 +509,7 @@ nav {
   margin: 0 5%;
   font-size: 1vw;
   line-height: 23px;
+  color: var(--very-dark-grayish-blue);
   font-weight: 500;
   font-family: "Barlow", sans-serif;
 }
@@ -532,7 +569,10 @@ footer {
   margin-top: 3vw;
   margin-bottom: 2vw;
   color: var(--dark-moderate-cyan);
+  filter: var(--dark-desaturated-cyan);
 }
+
+
 
 .part-7 .links ul {
   display: flex;
@@ -552,3 +592,44 @@ footer {
   list-style: none;
 
 }
+
+.links ul li a:hover{
+  color: white;
+}
+
+.social-icons{
+  margin: 0 15px;
+  margin-top: 6vw;
+
+}
+
+.social-icons #icon{
+  margin: 0 15px;
+  /* fill: hsl(168, 34%, 41%); */
+  transition: fill 0.3s ease;
+}
+
+.social-icons #icon:hover {
+  fill: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
