@@ -97,7 +97,8 @@
     background-color: white;
     position: absolute;
     top: 15vh;
-    left: 10%;
+    align-items: center;
+    
     width: 50vh;
     height: 60vh;
     border-radius: 2vw;
