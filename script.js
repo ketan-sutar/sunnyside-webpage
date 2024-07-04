@@ -12,6 +12,24 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuOpenIcon = document.querySelector(".menu-open");
+  const menuCloseIcon = document.querySelector(".menu-close");
+  const rightNav = document.querySelector(".right-nav");
+
+  menuOpenIcon.addEventListener("click", function () {
+    rightNav.style.display = "flex";
+    menuOpenIcon.style.display = "none";
+    menuCloseIcon.style.display = "block";
+  });
+
+  menuCloseIcon.addEventListener("click", function () {
+    rightNav.style.display = "none";
+    menuOpenIcon.style.display = "block";
+    menuCloseIcon.style.display = "none";
+  });
+});
+
 
 
 
